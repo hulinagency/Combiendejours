@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculer Durée entre Deux Dates (Jours, Mois, Années) | Compteur de Jours</title>
+    <meta name="description" content="Calculez facilement le temps écoulé entre deux dates. Obtenez le résultat en nombre total de jours, semaines, mois et années avec notre calculateur de durée gratuit.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <h1>Combien de Jours ?</h1>
+            <p class="header-tagline">Le calculateur de durée simple et précis</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="calculator-app" role="application" aria-label="Calculateur de durée">
+            <div class="calendar-wrapper">
+                
+                <section class="calendar-section" aria-labelledby="start-date-heading">
+                    <h2 id="start-date-heading">Date de début</h2>
+                    <p id="start-date-display" class="selected-date-display" aria-live="polite">Aucune</p>
+                    <div class="calendar-container" id="start-calendar">
+                        <div class="calendar-header">
+                            <button class="prev-month" aria-label="Mois précédent">&lt;</button>
+                            <span class="month-display" aria-live="polite"></span>
+                            <select class="year-select" aria-label="Sélectionner l'année"></select>
+                            <button class="next-month" aria-label="Mois suivant">&gt;</button>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="day-label">Lun</div><div class="day-label">Mar</div><div class="day-label">Mer</div>
+                            <div class="day-label">Jeu</div><div class="day-label">Ven</div><div class="day-label">Sam</div>
+                            <div class="day-label">Dim</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calendar-section" aria-labelledby="end-date-heading">
+                    <h2 id="end-date-heading">Date de fin</h2>
+                    <p id="end-date-display" class="selected-date-display" aria-live="polite">Aucune</p>
+                    <div class="calendar-container" id="end-calendar">
+                        <div class="calendar-header">
+                            <button class="prev-month" aria-label="Mois précédent">&lt;</button>
+                            <span class="month-display" aria-live="polite"></span>
+                            <select class="year-select" aria-label="Sélectionner l'année"></select>
+                            <button class="next-month" aria-label="Mois suivant">&gt;</button>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="day-label">Lun</div><div class="day-label">Mar</div><div class="day-label">Mer</div>
+                            <div class="day-label">Jeu</div><div class="day-label">Ven</div><div class="day-label">Sam</div>
+                            <div class="day-label">Dim</div>
+                        </div>
+                    </div>
+                    <button id="today-btn">Utiliser Aujourd'hui</button>
+                </section>
+            </div>
+
+            <section id="result-container" class="result-container" aria-live="polite">
+                <h2>Durée Écoulée</h2>
+                <div id="result-details">
+                    <p>Sélectionnez une date de début et de fin.</p>
+                </div>
+            </section>
+        </div>
+
+        <article class="content-seo">
+            <h2>Comment calculer le nombre de jours entre deux dates ?</h2>
+            <p>Notre outil de <strong>calcul de durée</strong> vous simplifie la vie. Que vous souhaitiez connaître le nombre de jours avant un événement important, calculer votre âge exact ou déterminer la durée d'un projet, cet outil est fait pour vous.</p>
+            <p><strong>Utilisation :</strong></p>
+            <ol>
+                <li>Sélectionnez une <strong>date de début</strong> dans le premier calendrier. Pour les dates lointaines (comme une naissance), utilisez le menu déroulant pour choisir l'année rapidement.</li>
+                <li>Sélectionnez une <strong>date de fin</strong> dans le second calendrier. Vous pouvez aussi cliquer sur "Utiliser Aujourd'hui".</li>
+                <li>Le résultat s'affiche instantanément, vous donnant la durée détaillée en années, mois et jours, ainsi que le <strong>nombre total de jours</strong>.</li>
+            </ol>
+            <h3>Pourquoi utiliser un compteur de jours ?</h3>
+            <p>Calculer manuellement la différence entre deux dates peut être complexe, notamment à cause des années bissextiles et du nombre variable de jours dans les mois. Notre <strong>compteur de jours</strong> prend tout cela en compte pour vous fournir un résultat précis à chaque fois.</p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="mentions-legales.html">Mentions Légales</a>
+            <a href="confidentialite.html">Politique de confidentialité</a>
+            <a href="a-propos.html">À propos</a>
+        </div>
+        <p class="footer-copyright">&copy; 2025 Combien de Jours. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
